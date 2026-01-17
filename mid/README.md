@@ -38,19 +38,15 @@ Por ejemplo, podríamos decir que en el siguiente ejemplo caben 5 rectángulos d
 
 Por favor completa esta sección con instrucciones detalladas:
 
-````markdown
-## Requisitos Previos
-
+#### Requisitos Previos
 - Python 3.9 o superior
 - (Opcional) Git para clonar el repositorio
 
-# Clonar el repositorio
-
-git clone https://github.com/nicolas-ruuf/tarea-dev.git
-cd tarea-dev/mid
-
+#### Clonar el repositorio
+````bash
+git clone https://github.com/alexconron/tarea-dev/
 ````
-
+#### Ejecutar codigo
 ```bash
 python main.py
 ````
