@@ -38,41 +38,51 @@ Por ejemplo, podríamos decir que en el siguiente ejemplo caben 5 rectángulos d
 
 Por favor completa esta sección con instrucciones detalladas:
 
-```markdown
+````markdown
 ## Requisitos Previos
-*[Lista las versiones de software necesarias: Node.js, Python, etc.]*
 
-## Instalación
-*[Comandos para instalar dependencias]*
+- Python 3.9 o superior
+- (Opcional) Git para clonar el repositorio
 
-## Cómo Ejecutar
-*[Comandos para iniciar la aplicación]*
+# Clonar el repositorio
+
+git clone https://github.com/nicolas-ruuf/tarea-dev.git
+cd tarea-dev/mid
+
+````
+
+```bash
+python main.py
+````
 
 ## Acceso a la Aplicación
-*[URL o puerto donde se puede acceder]*
-```
+
+- La aplicación se ejecuta por consola.
+- Los resultados de los tests se muestran directamente en la salida estándar (terminal).
 
 ---
 
 ## 📝 Tu Solución
 
 ### Explicación del Algoritmo
-*[Explica aquí cómo funciona tu algoritmo para encontrar la máxima cantidad de paneles]*
 
-
-
+El algoritmo calcula cuántos paneles caben dentro del techo probando una disposición principal y luego aprovechando el espacio sobrante.  
+Primero se colocan paneles en una orientación fija hasta donde sea posible. Luego, el espacio que queda libre se utiliza para intentar colocar paneles rotados.  
+De esta forma se logra una solución simple que permite mezclar orientaciones y obtener el máximo número de paneles para los casos evaluados.
 
 ### Decisiones Técnicas
-*[Explica las tecnologías elegidas y por qué]*
 
-
-
+Se utilizó Python por simplicidad y rapidez de desarrollo.  
+La solución no depende de librerías externas ni frameworks, lo que facilita su ejecución y revisión.  
+El enfoque prioriza claridad y facilidad de explicación por sobre una optimización extrema del problema geométrico.
 
 ### Estructura del Proyecto
-*[Describe brevemente la organización de tu código]*
 
+El proyecto está compuesto por un único archivo Python que contiene:
 
-
+- La función principal para calcular la cantidad de paneles.
+- Funciones auxiliares para explicar la distribución de paneles.
+- Un pequeño runner para ejecutar y validar los casos de prueba.
 
 ---
 
@@ -88,28 +98,21 @@ Repetir el ejercicio base, considerando un techo triangular, isóceles.
 
 <img width="550" height="364" alt="image" src="https://github.com/user-attachments/assets/13a2a04c-3672-421a-8a9c-3146505924ad" />
 
-
 **Opción 2**
 
 Repetir el ejercicio base considerando dos rectángulos iguales superpuestos. Puedes parametrizar la superposición entre ambos rectángulos.
 
 <img width="476" height="232" alt="image" src="https://github.com/user-attachments/assets/8daf9b46-ee03-4dc2-ac19-0ad4968b7941" />
 
-
 ### Bonus Implementado
-*[Si implementaste algún bonus, indica cuál y explica tu solución]*
 
-
-
+_[Si implementaste algún bonus, indica cuál y explica tu solución]_
 
 ---
 
 ## 🤔 Supuestos y Decisiones
 
-*[Si tuviste que tomar algún supuesto o decisión de diseño, explícalo aquí]*
-
-
-
+_[Si tuviste que tomar algún supuesto o decisión de diseño, explícalo aquí]_
 
 ---
 
@@ -118,3 +121,4 @@ Repetir el ejercicio base considerando dos rectángulos iguales superpuestos. Pu
 Si tienes dudas del enunciado del problema, te pedimos que tomes tus propios supuestos y después los comentas en el readme. No hay problema con eso 😉.
 
 Si tienes dudas por otro motivo, escríbenos a jobs@ruuf.solar y te ayudaremos con cualquier inquietud.
+````
